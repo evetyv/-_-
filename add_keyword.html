@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить ключевое слово</title>
+</head>
+<body>
+    <h1>Добавить ключевое слово</h1>
+    <form method="post">
+        <label for="word">Ключевое слово:</label>
+        <input type="text" id="word" name="word" required>
+        <button type="submit">Добавить</button>
+    </form>
+    <a href="{{ url_for('index') }}">Вернуться на главную</a>
+</body>
+</html>

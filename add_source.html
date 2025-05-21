@@ -1,0 +1,18 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить источник</title>
+</head>
+<body>
+<h1>Добавить источник</h1>
+<form method="post" action="{{ url_for('add_source') }}">
+    <input type="text" name="name" placeholder="Название источника" required>
+    <input type="text" name="url" placeholder="Ссылка на источник" required>
+    <button type="submit">Добавить</button>
+</form>
+<p><a href="{{ url_for('index') }}">Вернуться на главную</a></p>
+</body>
+</html>
